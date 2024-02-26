@@ -61,18 +61,31 @@ header span {
     height: 300px;
     text-align: center;
     position: relative;
-    background-image: url('Resources/cousson.jpg');
+    background-image: url('Resources/cousson_modif.jpg');
 }
 
 .home h1 {
+    top:20%;
+    left:35%;
+    position: absolute;
     color: black;
     padding: 20px;
     background-color: white;
-    width: 50%;
-    margin: auto;
-    top: 50%;
-    left: 50%;
+    width: 35%;
     font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-bottom: 10px;
+}
+
+.home p {
+    top:55%;
+    left:15%;
+    position: absolute;
+    color: black;
+    width:75%;
+    background-color: white;
+    padding:5px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px black;
 }
@@ -83,4 +96,49 @@ header span {
     color: white;
     padding: 50px;
     text-align: center;
+    display:flex;
 }
+
+.aboutme p {
+    margin-top: 5%;
+}
+
+.aboutphoto img {
+    margin-left: 10%;
+    height: 300px;
+    flex-direction: column;
+    border-radius: 100px;
+}
+
+/**CV**/
+
+.cv {
+    background-color: rgb(9, 116, 9);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centrer verticalement le contenu */
+}
+
+.cv_text {
+    flex: 1; /* Permet au contenu de s'étendre sur toute la hauteur disponible */
+    text-align: center; /* Aligner le texte à gauche ou à droite selon votre besoin */
+}
+
+.cv_text h2 {
+    margin-bottom: 5%;
+}
+
+.cv_render embed {
+    margin-right: 30px;
+    width: 500px;
+    height: 700px;
+}
+
+.cv a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+

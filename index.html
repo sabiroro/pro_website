@@ -14,27 +14,50 @@
     <header>
         <a href="#" class="homepage"><span>M</span>a page</a>
         <ul class="navbar">
-            <li><a href="#"><span>Q</span>ui suis-je ?</a></li>
-            <li><a href="#"><span>M</span>on CV</a></li>
+            <li><a href="#link_me"><span>Q</span>ui suis-je ?</a></li>
+            <li><a href="#link_cv"><span>M</span>on CV</a></li>
             <li><a href="#"><span>M</span>es projets</a></li>
             <li><a href="#"><span>M</span>on parcours</a></li>
         </ul>
     </header>
 
     <main>
-      <section class="home"> <!--Welcome section-->
+        <section class="home"> <!--Welcome section-->
             <h1>Bienvenue sur ma page</h1>
-            <p>Ici, vous trouverez tout sur moi : mon identité, mon CV, mes projets et mon parcours.</p>
-            <p>Ce site est un résumé de mes compétences et me fait aussi guise de portfolio.</p>
-       </section>
+            <p>Ici, vous trouverez tout sur moi : mon identité, mon CV, mes projets et mon parcours.<br> Ce site est un
+                résumé de mes compétences et me fait aussi guise de portfolio.</p>
+        </section>
 
-       <section class="me">
-            <h2>Qui suis-je ?</h2>
-            <p>Je suis un développeur web en herbe, passionné par la programmation et le développement web. Je suis
-            actuellement
-            en formation chez OpenClassrooms pour devenir développeur web. Je suis passionné par la programmation et le
-            développement web. Je suis actuellement en formation chez OpenClassrooms pour devenir développeur web.</p>
-       </section>
+        <section class="me">
+            <div class="aboutme">
+                <h2 id="link_me">Qui suis-je ?</h2>
+                <p>Je suis Romain ROSANO, un étudiant de 21 ans ayant grandi dans
+                    le sud de la France. Je suis attiré par plein d'activités que je
+                    pratique très souvent comme le volley, le vélo (ma plus grande
+                    passion !), les jeux vidéos tout comme les jeux de société (je
+                    fais même partie de l'association Bazar Des Jeux dans mon école
+                    que j'anime avec des amis chaque semaine). Je suis très souvent
+                    joyeux car j'adore profiter de la vie avec mes amis tout en faisant
+                    ce qui me plaît le plus !</p>
+            </div>
+            <div class="aboutphoto">
+                <img src="Resources/Photo_CV_rogne.png" alt="Photo de moi">
+            </div>
+        </section>
+        <section class="cv">
+            <div class="cv_render">
+                <embed src="Resources/CV_ROSANO_Romain.pdf" type="application/pdf">
+            </div>
+            <div class="cv_text">
+                <h2 id="link_cv">Mon CV</h2>
+                <p>Vous voulez en savoir plus sur moi ? N'hésitez pas à télécharger mon CV !<br>
+                    Vous y trouverez toutes les informations nécessaires me concernant
+                    et vous pourrez aussi découvrir mes compétences.<br>
+                    Pour le télécharger, cliquez sur ce
+                    <a href="Resources/CV_ROSANO_Romain.pdf" target="_blanck" download="CV_ROSANO_Romain.pdf">lien</a>.
+                </p>
+            </div>
+        </section>
     </main>
 
 </body>
