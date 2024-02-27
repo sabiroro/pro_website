@@ -132,8 +132,8 @@ header span {
 
 .cv_render embed {
     margin-right: 30px;
-    width: 500px;
-    height: 700px;
+    width: 520px;
+    height: 730px;
 }
 
 .cv a {
@@ -142,3 +142,76 @@ header span {
     font-weight: bold;
 }
 
+
+/**Projects**/
+
+.projects {
+    background-color: rgb(121, 112, 112);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centrer verticalement le contenu */
+    flex-direction: column;
+}
+
+.projects_resume {
+    margin-bottom: 3%;
+}
+
+.projects_resume h2 {
+    margin-bottom: 1%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-inline: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin-bottom: 5%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card iframe {
+    width: 100%;
+}
+
+/**Formation**/
+
+/**Footer**/
+footer {
+    background-color: rgb(65, 190, 248);
+    color: rgba(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer p {
+    text-align: right;
+    font-weight: bold;
+}
