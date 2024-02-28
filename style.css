@@ -62,12 +62,13 @@ header span {
     text-align: center;
     position: relative;
     background-image: url('Resources/cousson_modif.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home h1 {
-    top:20%;
-    left:35%;
-    position: absolute;
     color: black;
     padding: 20px;
     background-color: white;
@@ -76,19 +77,20 @@ header span {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px black;
     margin-bottom: 10px;
+    max-width: 400px;
 }
 
 .home p {
-    top:55%;
-    left:15%;
-    position: absolute;
     color: black;
     width:75%;
     background-color: white;
     padding:5px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px black;
+    max-width: 800px;
+    margin-top: 3%;
 }
+
 
 /**ABOUT ME**/
 .me {
@@ -175,6 +177,9 @@ header span {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     color: black;
     padding: 10px;
@@ -183,25 +188,48 @@ header span {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px black;
     margin-bottom: 20px;
-}
-
-.card p {
-    margin-bottom: 5%;
+    height: 700px;
 }
 
 .card h4 {
     margin-bottom: 5%;
 }
 
-.card img {
-    width: 100%;
-}
-
+.card img,
 .card iframe {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /**Formation**/
+
+.formation {
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    background-image: url('Resources/forest_route.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formation h2 {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.formation img {
+    max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur de son contenant */
+    height: auto;
+    margin-top: 1%;
+}
 
 /**Footer**/
 footer {
