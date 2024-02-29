@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: 77px;
+}
+
 main {
     padding-top: 78px;
 }
@@ -191,6 +195,23 @@ header span {
     height: 700px;
 }
 
+@media screen and (max-width: 790px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin-inline: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px black;
+        margin-bottom: 20px;
+        height: 1200px;
+    }
+}
+
 .card h4 {
     margin-bottom: 5%;
 }
@@ -226,9 +247,9 @@ header span {
 }
 
 .formation img {
-    max-width: 100%; /* Limite la largeur de l'image à 100% de la largeur de son contenant */
-    height: auto;
-    margin-top: 1%;
+    width: 100%; /* Limite la largeur de l'image à 100% de la largeur de son contenant */
+    height: 90%;
+    margin-top: 3%;
 }
 
 /**Footer**/
