@@ -302,11 +302,11 @@
         }
     
         section {
-            scroll-margin-top: 77px;
+            scroll-margin-top: 68px;
         }
     
         main {
-            padding-top: 78px;
+            padding-top: 68px;
         }
     
         /**HEADER**/
@@ -324,7 +324,6 @@
         }
     
         header a {
-            margin-left: 30px;
             text-decoration: none;
             font-weight: 300;
             color: rgb(40, 122, 204);
@@ -336,14 +335,18 @@
         }
     
         .homepage {
-            font-size: xx-large;
+            font-size: x-large;
         }
     
         .navbar {
             list-style: none;
             position: relative;
             display: flex;
-            font-size: large;
+            font-size: 70%;
+        }
+
+        .navbar li {
+            margin-inline: 3px;
         }
     
         .navbar a:hover {
