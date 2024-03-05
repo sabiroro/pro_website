@@ -302,11 +302,11 @@
         }
     
         section {
-            scroll-margin-top: 68px;
+            scroll-margin-top: 58px;
         }
     
         main {
-            padding-top: 68px;
+            padding-top: 58px;
         }
     
         /**HEADER**/
@@ -318,16 +318,19 @@
             width: 100%;
             z-index: 1;
             display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
             transition: 0.5s;
         }
-    
+
         header a {
             text-decoration: none;
             font-weight: 300;
             color: rgb(40, 122, 204);
             font-weight: bold;
+            white-space: nowrap;
         }
     
         header span {
@@ -335,18 +338,19 @@
         }
     
         .homepage {
-            font-size: x-large;
+            font-size: medium;
         }
     
         .navbar {
             list-style: none;
             position: relative;
             display: flex;
-            font-size: 70%;
         }
 
         .navbar li {
             margin-inline: 3px;
+            white-space: nowrap;
+            font-size: small;
         }
     
         .navbar a:hover {
