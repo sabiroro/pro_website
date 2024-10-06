@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) { /* Computer's view */
+@media screen and (min-width: 790px) { /* Computer's view */
     /**HMTL**/
     * {
         margin: 0px;
@@ -28,6 +28,11 @@
         justify-content: space-between;
         align-items: center;
         transition: 0.5s;
+    }
+
+    header label {
+        display: none;
+        visibility: hidden;
     }
 
     header a {
@@ -185,6 +190,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .column {
@@ -203,26 +209,7 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px black;
         margin-bottom: 20px;
-        height: 700px;
-    }
-
-    @media screen and (max-width: 790px) {
-
-        /* Pour adapter le texte des cartes sur un écran réduit */
-        .card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: white;
-            color: black;
-            padding: 10px;
-            margin-inline: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px black;
-            margin-bottom: 20px;
-            height: 1200px;
-        }
+        height: 100%;
     }
 
     .card h4 {
@@ -291,7 +278,10 @@
 
 
 
-@media screen and (max-width: 480px) { /* Phone's view */
+
+
+
+@media screen and (max-width: 790px) { /* Phone's view */
         /**HMTL**/
         * {
             margin: 0px;
@@ -332,19 +322,27 @@
             font-weight: bold;
             white-space: nowrap;
         }
+
+        header label {
+            display: none;
+            /**
+            display: block;
+            visibility: visible;
+            font-size: x-large;
+            cursor: pointer;
+            **/
+        }
     
         header span {
             color: green;
         }
     
         .homepage {
-            font-size: medium;
+            font-size: x-large;
         }
     
         .navbar {
-            list-style: none;
-            position: relative;
-            display: flex;
+            display: none;
         }
 
         .navbar li {
