@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="code.js" defer></script>
+    <script src="app.js"></script>
     <title>Présentation</title>
     <link rel="icon" href="Resources/icon.png" />
 </head>
@@ -13,7 +13,8 @@
 <body>
     <header>
         <a href="#" class="homepage"><span>M</span>a page</a>
-        <ul class="navbar">
+        <label id="dash">☰</label>
+        <ul class="navbar" id="choices">
             <li><a href="#link_me"><span>Q</span>ui suis-je ?</a></li>
             <li><a href="#link_cv"><span>M</span>on CV</a></li>
             <li><a href="#link_project"><span>M</span>es projets</a></li>
@@ -68,7 +69,7 @@
         <section class="projects" id="link_project">
             <div class="projects_resume">
                 <h2>Mes projets</h2>
-                <p>Vous trouverez ici tous les projets que j'ai réalisés ou auxquels j'ai participé,
+                <p>Vous trouverez ici les principaux projets que j'ai réalisés ou auxquels j'ai participés,
                     que le projet soit scolaire comme personnel.
                 </p>
             </div>
@@ -204,11 +205,12 @@
                         <img src="Resources/gantt_diagramme.png" alt="Projet Gantt">
                         <div class="container">
                             <h4><b>Adaptation d'une application web pour créer des diagrammes de Gantt</b></h4>
-                            <p>Par groupe de 4, nous avons pour but de réaliser une application web basée sur
+                            <p>Par groupe de 4, nous avions pour but de réaliser une application web basée sur
                                 le code d'un outil déjà existant (permettant d'évaluer le temps d'exécution d'une 
                                 fonction ainsi que les fonctions "internes" appelées).<br>
-                                L'objectif est donc d'adapter cette application pour que l'on puisse, dans un premier
-                                temps, créer des diagrammes de Gantt à partir de fichiers .json (statique) ; et, dans un second temps,
+                                L'objectif était donc d'adapter cette application pour que l'on puisse, dans un premier
+                                temps, créer des diagrammes de Gantt pour la réservation de clusters sur Grid'5000 
+                                (serveur fournissant des coeurs d'exécution) à partir de fichiers .json (statique). Puis, dans un second temps,
                                 de pouvoir stocker et modifier les données du fichier étant stocké sur un serveur, rendant le site 
                                 dynamique avec un rafraîchissement de la page régulier.
                             </p>
@@ -216,6 +218,101 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <p><b>Février-Mars 2024</b></p>
+                        <img src="Resources/search_bar.png" alt="Projet recherche d'info">
+                        <div class="container">
+                            <h4><b>Développement d'un moteur de recherche</b></h4>
+                            <p>Le but de ce projet était de développer un moteur de recherche en Python capable de trouver les 
+                                documents les plus pertinents parmi un corpus de plusieurs milliers de fichiers.
+                                Avec mon binôme, nous avions décidé d'aller plus loin en créant une interface graphique
+                                associant au moteur en plus d'un graphique représentant les valeurs permettant la recherche
+                                (tf-idf, dictionnaire inversé, ...).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p><b>Mars-Avril 2024</b></p>
+                        <img src="Resources/client_server.png" alt="Projet applications réparties">
+                        <div class="container">
+                            <h4><b>Création d'un site web client-serveur basé sur les servlets Java</b></h4>
+                            <p>L'objectif du travail était de créer un serveur web statique puis dynamique depuis Java basé sur le système de servlets.<br>
+                                Nous devions réaliser l'implémentation d'une méthode GET permettant aux clients de récupérer des
+                                images stockées sur le serveur. La suite du projet était de pouvoir créer un système de 
+                                sessions et de cookies utilisateurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p><b>Mars-Avril 2024</b></p>
+                        <img src="Resources/deep_learning.png" alt="Projet classificateur d'images">
+                        <div class="container">
+                            <h4><b>Création d'un classificateur d'images</b></h4>
+                            <p>Ce projet avait pour objectif de comprendre et d'utiliser le machine learning pour 
+                                créer un classificateur d'images. Il se basait sur la bibliothèque PyTorch de Python.
+                                Le but était de finir le tutoriel du site de PyTorch tout en maximisant les performances
+                                en modifiant les hyperparamètres caractéristiques (batch, learning rate, nombre de couches, ...).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <p><b>Mars-Avril 2024</b></p>
+                        <img src="Resources/opengl.png" alt="Projet OpenGL">
+                        <div class="container">
+                            <h4><b>Développement d'une scène 3D en OpenGL</b></h4>
+                            <p>Nous devions réalisé une scène 3D OpenGL en reprenant et utilisant un maximum de notions de cours.
+                                Nous avons alors pu réaliser une scène sur le thème du FarWest Américain comprenant : une rivière animée, 
+                                des cactus animés, des particules, une génération procédurale des montagnes, des particules, des textures, 
+                                des shaders, des lumières et ombres (modèle de Phong) et une skybox.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p><b>Avril-Août 2024</b></p>
+                        <img src="Resources/ski_resort.JPG" alt="Stage">
+                        <div class="container">
+                            <h4><b>Stage de développement logiciel</b></h4>
+                            <p>Entre Avril et Août 2024, j'ai été stagiaire dans l'entreprise GMM, basée au Nord de Grenoble.
+                                Il s'agit d'une entreprise spécialisée dans la conception, l'installation et la maintenance de 
+                                remontées mécaniques principalement. Pour certifier une future installation respecte bien les normes, 
+                                une "note de calcul de ligne" est établie et fournie toutes les valeurs caractéristiques du téléski.
+                                Le but du stage était de reprendre le logiciel interne développé en Visual Basic pour en faire une 
+                                nouvelle version améliorée et plus modulable en Python. J'ai principalement travaillé sur l'interface 
+                                graphique et la base de données tout en initiant les premiers fichiers de calculs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p><b>Septembre-Décembre 2024 (en cours...)</b></p>
+                        <img src="Resources/mmm.png" alt="Projet ecom">
+                        <div class="container">
+                            <h4><b>Réalisation d'un site de e-commerce</b></h4>
+                            <p>En groupe de 5, nous devons réaliaser un site de e-commerce en utilisant les infrastructures cloud 
+                                d'Azure pour héberger le site. Le site en question est celui de "Mes Meilleurs Menus" qui permet 
+                                de fournir des menus, astuces et conseils pour bien et mieux manger au quotidien. L'enjeu est principalement 
+                                d'automatiser plusieurs tâches aujourd'hui faites manuellement tout en développant sur les outils communs du web.
+                                Notamment par l'utilisation de Docker (CI/CD), Jhipster (base du back), Postgres (base de données), Angular (front), 
+                                Maven (gestion des dépendances), Git (gestion de version), JUnit (tests) entre autres. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section class="formation" id="link_formation">
@@ -224,7 +321,8 @@
             <div class="formation_text">
                 <p>École Polytech’ Grenoble – 2022 à 2025<br>
                     Formation pour devenir ingénieur en informatique<br>
-                    8ème de promotion la première année<br>
+                    7ème de promotion en 4ème année<br>
+                    8ème de promotion en 3ème année<br>
                     Apprentissage majeur de mon savoir
                 </p>
                 <p>Lycée Paul Cézanne (Aix-en-Provence) – 2020 à 2022<br>
